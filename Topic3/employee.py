@@ -1,12 +1,10 @@
 """
-
 Program: employee.py
 Author: Alex Heinrichs
 Date created: 11/2/2022
 
 Contains a class called employee which demonstrates encapsulation
 """
-import datetime
 
 
 class Employee:

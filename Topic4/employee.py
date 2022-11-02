@@ -5,37 +5,38 @@ Date created: 11/2/2022
 
 Contains a class called employee which demonstrates encapsulation
 """
-from Topic4.person import Person
 
 
-class Employee(Person):
+class Employee:
     """Employee Class"""
 
     # Constructor
-    def __init__(self, lname, fname, addy, p_number, s_date, sal):
-        super().__init__(lname, fname, addy, p_number)
-        self._start_date = s_date
-        self._salary = sal
-
-    def change_salary(self, sal):
-        self._salary = sal
+    def __init__(self, lname, fname, addy, phone_number):
+        self._last_name = lname
+        self._first_name = fname
+        self._address = addy
+        self._phone = phone_number
 
     def display(self):
-        return super().display() + '\nStart date: ' + self._start_date \
-               + '\nSalary: ' + str(self._salary)
+        return str(self._first_name) + " " + str(self._last_name) + "\n" \
+               + self._address
 
     def __str__(self):
-        return '\nStart date: ' + self._start_date \
-               + '\nSalary: ' + str(self._salary)
+        return "First name: " + self._first_name \
+                + "\nLast name: " + self._last_name \
+                + "\nAddress: " + self._address \
+                + "\nPhone number: " + self._phone
 
     def __repr__(self):
-        return '\nStart date: ' + self._start_date \
-               + '\nSalary: ' + str(self._salary)
+        return "First name: " + self._first_name \
+                + "\nLast name: " + self._last_name \
+                + "\nAddress: " + self._address \
+                + "\nPhone number: " + self._phone
 
 
 if __name__ == "__main__":
     emp = Employee("Heinrichs", "Alex", "317 East St.\nAmes, Iowa",
-                   "641-691-9494", "11/2/2022", "6416919494")
+                   "641-691-9494")
     print(emp.display())
     print(emp)
     del emp

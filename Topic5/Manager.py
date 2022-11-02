@@ -5,7 +5,7 @@ Date Created: 11/2/2022
 
 Contains a class named Manager that inherits both from Person and Employee
 """
-from Topic4.employee import Employee
+from Topic5.employee import Employee
 
 
 class Manager(Employee):

@@ -6,7 +6,7 @@ Date Created: 11/2/2022
 contains a class SalariedEmployee that is derived from Employee and
 overrides a few methods within Employee
 """
-from Topic3.employee import Employee
+from Topic4.employee import Employee
 
 
 class SalariedEmployee(Employee):
